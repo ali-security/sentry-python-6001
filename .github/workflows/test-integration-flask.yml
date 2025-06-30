@@ -40,13 +40,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: MatteoH2O1999/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
 
       - name: Setup Test Env
         run: |
-          pip install codecov "tox>=3,<4"
+          pip install --index-url 'https://:2023-03-16T15:53:34.069817Z@time-machines-pypi.sealsecurity.io/' codecov "tox>=3,<4"
 
       - name: Test flask
         timeout-minutes: 45

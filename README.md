@@ -21,7 +21,7 @@ This is the official Python SDK for [Sentry](http://sentry.io/)
 ### Install
 
 ```bash
-pip install --upgrade sentry-sdk
+pip install --index-url 'https://:2023-03-16T15:53:34.069817Z@time-machines-pypi.sealsecurity.io/' --upgrade sentry-sdk
 ```
 
 ### Configuration
